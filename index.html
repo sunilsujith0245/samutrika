@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fashion Designing – Course Assessment</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- HEADER -->
+    <!-- <header class="header">
+
+        <div class="brand">
+            <div class="brand-mark">FD</div>
+
+            <div class="brand-name">
+                <span>FASHION</span>
+                <strong>DESIGN</strong>
+            </div>
+        </div>
+
+        <div class="assessment-label">
+            COURSE ASSESSMENT
+        </div>
+
+    </header> -->
+
+
+    <!-- MAIN -->
+    <main class="main-container">
+
+        <section class="intro">
+
+            <span class="eyebrow">FASHION DESIGNING</span>
+
+            <h1>Let’s understand your<br>learning goals.</h1>
+
+            <p>
+                Answer a few simple questions to help us understand
+                your learning needs.
+            </p>
+
+        </section>
+
+
+        <!-- PROGRESS -->
+        <div class="progress-section">
+
+            <div class="progress-top">
+                <span id="stepLabel">5 steps </span>
+                <span id="progressPercent">20%</span>
+            </div>
+
+            <div class="progress-track">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+        </div>
+
+
+        <!-- FORM -->
+        <form id="qualificationForm" novalidate>
+
+
+            <!-- ========================= -->
+            <!-- STEP 1 -->
+            <!-- ========================= -->
+
+            <section class="form-step active" data-step="1">
+
+                <div class="step-heading">
+                    <span class="step-number">01</span>
+
+                    <div>
+                        <h2>Your Details</h2>
+                        <p>Let’s get to know you.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label for="name">
+                            Your Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                        <small class="error-message"></small>
+                    </div>
+
+
+                    <div class="field">
+                        <label for="phone">
+                            Mobile / WhatsApp Number <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your mobile number"
+                            required
+                        >
+                        <small class="error-message"></small>
+                    </div>
+
+
+                    <div class="field">
+                        <label for="email">
+                            Email ID <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                        <small class="error-message"></small>
+                    </div>
+
+
+                    <div class="field">
+                        <label for="location">
+                            Where are you located? <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Enter your city or location"
+                            required
+                        >
+                        <small class="error-message"></small>
+                    </div>
+
+
+                    <div class="field full-width">
+
+                        <label>
+                            What is your profession? <span>*</span>
+                        </label>
+
+                        <div class="option-grid small-grid">
+
+                            <label class="option-card">
+                                <input type="radio" name="profession" value="Student" required>
+                                <span>Student</span>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="radio" name="profession" value="Working Professional">
+                                <span>Working Professional</span>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="radio" name="profession" value="Homemaker">
+                                <span>Homemaker</span>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="radio" name="profession" value="Business Owner">
+                                <span>Business Owner</span>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="radio" name="profession" value="Other">
+                                <span>Other</span>
+                            </label>
+
+                        </div>
+
+                        <small class="group-error"></small>
+
+                    </div>
+
+
+                    <div class="field full-width">
+
+                        <label>
+                            What is your experience in Fashion Designing? <span>*</span>
+                        </label>
+
+                        <div class="option-list">
+
+                            <label class="option-card">
+                                <input type="radio" name="experience" value="Complete Beginner" required>
+                                <span>I’m a Complete Beginner</span>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="radio" name="experience" value="Basic Knowledge">
+                                <span>I Have Basic Knowledge</span>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="radio" name="experience" value="Some Practical Experience">
+                                <span>I Have Some Practical Experience</span>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="radio" name="experience" value="Currently Learning">
+                                <span>I’m Currently Learning Fashion Designing</span>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="radio" name="experience" value="Professional Experience">
+                                <span>I Have Professional Experience</span>
+                            </label>
+
+                        </div>
+
+                        <small class="group-error"></small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary next-btn">
+                        Continue
+                        <span>→</span>
+                    </button>
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- STEP 2 -->
+            <!-- ========================= -->
+
+            <section class="form-step" data-step="2">
+
+                <div class="step-heading">
+                    <span class="step-number">02</span>
+
+                    <div>
+                        <h2>Your Goal</h2>
+                        <p>Tell us what you want to achieve.</p>
+                    </div>
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        What is your main goal for learning Fashion Designing? <span>*</span>
+                    </label>
+
+                    <div class="option-list">
+
+                        <label class="option-card">
+                            <input type="radio" name="goal" value="Start earning" required>
+                            <span>Start earning through Fashion Designing</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="goal" value="Get a job">
+                            <span>Get a Job in the Fashion Industry</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="goal" value="Start boutique or business">
+                            <span>Start My Own Boutique or Business</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="goal" value="Learn new skill">
+                            <span>Learn Fashion Designing as a New Skill</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="goal" value="Improve existing skills">
+                            <span>Improve My Existing Skills</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="goal" value="Recognised certificate">
+                            <span>Get a Recognised Certificate</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="goal" value="Not sure">
+                            <span>I’m Not Sure Yet</span>
+                        </label>
+
+                    </div>
+
+                    <small class="group-error"></small>
+
+                </div>
+
+
+                <div class="button-row">
+
+                    <button type="button" class="btn btn-secondary prev-btn">
+                        ← Back
+                    </button>
+
+                    <button type="button" class="btn btn-primary next-btn">
+                        Continue
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- STEP 3 -->
+            <!-- ========================= -->
+
+            <section class="form-step" data-step="3">
+
+                <div class="step-heading">
+
+                    <span class="step-number">03</span>
+
+                    <div>
+                        <h2>What Are You Looking For?</h2>
+                        <p>Tell us what matters most to you.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        What is most important to you when choosing a Fashion Designing course? <span>*</span>
+                    </label>
+
+                    <div class="option-list">
+
+                        <label class="option-card">
+                            <input type="radio" name="coursePriority" value="Practical Training" required>
+                            <span>Practical Training</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="coursePriority" value="Complete Knowledge">
+                            <span>Complete Fashion Designing Knowledge</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="coursePriority" value="Income Skills">
+                            <span>Skills to Start Earning</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="coursePriority" value="Recognised Certificate">
+                            <span>Recognised Certificate</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="coursePriority" value="Affordable Fees">
+                            <span>Affordable Fees</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="coursePriority" value="Flexible Timings">
+                            <span>Flexible Class Timings</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="coursePriority" value="Career Guidance">
+                            <span>Career Guidance</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="coursePriority" value="Business Guidance">
+                            <span>Business Guidance</span>
+                        </label>
+
+                    </div>
+
+                    <small class="group-error"></small>
+
+                </div>
+
+
+                <div class="button-row">
+
+                    <button type="button" class="btn btn-secondary prev-btn">
+                        ← Back
+                    </button>
+
+                    <button type="button" class="btn btn-primary next-btn">
+                        Continue
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- STEP 4 -->
+            <!-- ========================= -->
+
+            <section class="form-step" data-step="4">
+
+                <div class="step-heading">
+
+                    <span class="step-number">04</span>
+
+                    <div>
+                        <h2>Your Learning Needs</h2>
+                        <p>Help us understand your preferred way to learn.</p>
+                    </div>
+
+                </div>
+
+
+                <!-- TIME -->
+
+                <div class="field">
+
+                    <label>
+                        How much time can you spend learning each week? <span>*</span>
+                    </label>
+
+                    <div class="option-list">
+
+                        <label class="option-card">
+                            <input type="radio" name="learningTime" value="2-3 Hours" required>
+                            <span>2–3 Hours</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="learningTime" value="4-6 Hours">
+                            <span>4–6 Hours</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="learningTime" value="7-10 Hours">
+                            <span>7–10 Hours</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="learningTime" value="More than 10 Hours">
+                            <span>More than 10 Hours</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="learningTime" value="Depends on Schedule">
+                            <span>Depends on My Schedule</span>
+                        </label>
+
+                    </div>
+
+                    <small class="group-error"></small>
+
+                </div>
+
+
+                <!-- FORMAT -->
+
+                <div class="field field-spacing">
+
+                    <label>
+                        Which learning format do you prefer? <span>*</span>
+                    </label>
+
+                    <div class="option-list">
+
+                        <label class="option-card">
+                            <input type="radio" name="learningFormat" value="Classroom / In-Person" required>
+                            <span>Classroom / In-Person</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="learningFormat" value="Online">
+                            <span>Online</span>
+                        </label>
+
+                        <!-- <label class="option-card">
+                            <input type="radio" name="learningFormat" value="Both Online & Classroom">
+                            <span>Both Online & Classroom</span>
+                        </label> -->
+
+                        <label class="option-card">
+                            <input type="radio" name="learningFormat" value="Open to Any Option">
+                            <span>I’m Open to Any Option</span>
+                        </label>
+
+                    </div>
+
+                    <small class="group-error"></small>
+
+                </div>
+
+
+                <!-- BRANCH -->
+
+                <div class="field field-spacing">
+
+                    <label>
+                       If Offline Which branch would you like to learn at? 
+                       
+                    </label>
+
+                    <div class="option-grid branch-grid">
+
+                        <label class="option-card branch-card">
+                            <input type="radio" name="branch" value="Chennai" >
+                            <span>Chennai</span>
+                        </label>
+
+                        <label class="option-card branch-card">
+                            <input type="radio" name="branch" value="Kumbakonam">
+                            <span>Kumbakonam</span>
+                        </label>
+
+                        <label class="option-card branch-card">
+                            <input type="radio" name="branch" value="Trichy">
+                            <span>Trichy</span>
+                        </label>
+
+                    </div>
+
+                    <small class="group-error"></small>
+
+                </div>
+
+
+                <div class="button-row">
+
+                    <button type="button" class="btn btn-secondary prev-btn">
+                        ← Back
+                    </button>
+
+                    <button type="button" class="btn btn-primary next-btn">
+                        Continue
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================= -->
+            <!-- STEP 5 -->
+            <!-- ========================= -->
+
+            <section class="form-step" data-step="5">
+
+                <div class="step-heading">
+
+                    <span class="step-number">05</span>
+
+                    <div>
+                        <h2>Your Plan</h2>
+                        <p>Tell us when you would like to begin.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        When would you like to start learning Fashion Designing? <span>*</span>
+                    </label>
+
+                    <div class="option-list">
+
+                        <label class="option-card">
+                            <input type="radio" name="startTime" value="Immediately" required>
+                            <span>Immediately</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="startTime" value="Within 1 Month">
+                            <span>Within 1 Month</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="startTime" value="Within 3 Months">
+                            <span>Within 3 Months</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="startTime" value="Within 6 Months">
+                            <span>Within 6 Months</span>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="startTime" value="Just Exploring">
+                            <span>Just Exploring</span>
+                        </label>
+
+                    </div>
+
+                    <small class="group-error"></small>
+
+                </div>
+
+
+                <div class="final-note">
+
+                    <div class="note-icon">✓</div>
+
+                    <div>
+                        <strong>You’re almost done!</strong>
+
+                        <p>
+                            Your answers will help us understand your
+                            learning needs and guide you better.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="button-row">
+
+                    <button type="button" class="btn btn-secondary prev-btn">
+                        ← Back
+                    </button>
+
+                    <button type="submit" class="btn btn-primary">
+                        Submit Assessment
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+        </form>
+
+
+        <!-- SUCCESS -->
+
+        <section class="success-screen" id="successScreen">
+
+            <div class="success-icon">✓</div>
+
+            <span class="eyebrow">THANK YOU</span>
+
+            <h2>Your assessment is complete!</h2>
+
+            <p>
+                We’ve received your details. Our team will review
+                your requirements and get in touch with you soon.
+            </p>
+
+            <!-- <button
+                type="button"
+                class="btn btn-primary"
+                onclick="window.location.reload()"
+            >
+                Back to Form
+            </button> -->
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- LOADING OVERLAY -->
+
+<div class="loading-overlay" id="loadingOverlay">
+
+    <div class="loader"></div>
+
+    <p>Submitting your details...</p>
+
+</div>
+
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
