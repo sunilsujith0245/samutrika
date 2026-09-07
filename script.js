@@ -191,6 +191,8 @@ document.addEventListener("DOMContentLoaded", () => {
         loadingOverlay.style.display = "none";
       }
 
+      fbq('track', 'Lead');
+
       form.style.display = "none";
 
       if (successScreen) {
